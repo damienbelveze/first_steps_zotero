@@ -52,11 +52,90 @@ If you are member of a school or laboratory which has subscribed to a proprietar
 
 Don't worry, it is possible to export all your references from Refworks or Endnote and to import them into Zotero. 
 
+From Mendely you just have to export you whole library in a bib or RIS format and to import it in Zotero as it is.
 
+For Endnote and Refworks, we could not test it on our own, but we rely for that on our colleagues from USA : 
+
+- [importing from Refworks](https://libguides.uta.edu/zotero/importing-refworks-data-into-zotero)  
+
+- [importing from Endnote](https://ask.lib.vt.edu/faq/38201)
 
 
 # How to install Zotero
 
+Installation process is different according to your Operating System (OS)
+
+## Windows 
+
+go to the download page of the [zotero website](https://zotero.org)
+Download 1. the software 2. the plugin for your browser
+
+## MacOs 
+
+go to the download page of the [zotero website](https://zotero.org)
+Zotero client embeds the plugin for Safari (you do not need to load a plugin for Safari). If you prefer to use another browser than Safari (let's say Chrome or Firefox), download and install the appropriate plugin.
+
+## Chromebook
+
+First you need to activate the Chromebook Linux sub-system (WSL) and then follow the instructions for GNU/Linux operating system 
+
+## GNU/Linux 
+
+go to the download page of the [zotero website](https://zotero.org)
+download the archive (something like Zotero-6.0.35_linux-x86_64.tar.bz2)
+move this file to opt/
+you will need sudo rights for that. 
+go to opt/
+*untar* this file : 
+
+```shell
+$ tar -xf Zotero-6.0.9_linux-x86_64.tar.bz2
+```
+
+rename the resulting file : 
+
+```shell
+$ mv Zotero-6.0.9_linux-x86_64 Zotero_linux
+```
+*cd* within Zotero_linux
+
+```shell
+$ cd Zotero_linux
+```
+
+at this stage it's already possible to run Zotero (from this place Zotero_linux, with the following command : ./zotero), but obviously it's easier to use a desktop icon. 
+
+Run the launcher icon under Zotero_linux : 
+
+```shell
+$ ./set_launcher_icon
+```
+shortcuts are usually located in ~/.local/share/applications/
+
+So we will have to make a symlink (symbolic link) from this place to the place where Zotero Is 
+
+```shell
+$ ln -s /opt/Zotero_linux/zotero.desktop ~/.local/share/applications/zotero.desktop
+```
+from now you should be able to start Zotero from an icon in your application menu. 
+
+don't forget to install the Zotero plugin in your favorite browser afterwards
+
+## and on my smartphone
+
+A Zotero exists in [iOS](https://www.zotero.org/support/ios). 
+You may sync your Zotero library with a [beta app](https://play.google.com/store/apps/details?id=org.zotero.android&hl=en-US) designed for Android users as well. 
+References may be added manually, via a DOI/ISBN or by scanning a barcode (EAN for books), but in december 2024, it was still impossible to make the Android mobile version work with a browser ([due to a lack of interoperability of Android, according to Zotero developers](https://forums.zotero.org/discussion/comment/480563#Comment_480563))
+
+
+# Why should I create an account to use Zotero
+
+you don't have to to use Zotero localy, but we strongly advise you to create an account.
+This will make possible to store your data and PDFs remotely so that: 
+
+- if you use anoter computer, you will be able to retrieve from your library online all the references you need povided you have an internet connection  
+- if your computer crash or if you wipe by mistake all the data you have in your Zotero library, this data can still be found and downloaded from your online library
+- Online libraries make it possible to work with other users on shared bibliographies
 
 
 
