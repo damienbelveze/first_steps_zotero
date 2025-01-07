@@ -18,7 +18,7 @@ link: lia.css
 
 icon: ./images/etoile.png
 
-comment: this content is adapted to PhD students who discover the free reference manager Zotero. 
+comment: this guide is adapted to PhD students who discover the free reference manager Zotero. Much of its content comes from the Zotero workshop libguide published by Formadoct and archived on [Internet Archive](https://web.archive.org/web/20210622005132/https://formadoct.doctorat-bretagneloire.fr/zotero_workshop/introduction)
 
 import: https://raw.githubusercontent.com/LiaTemplates/citations/main/README.md
 
@@ -137,7 +137,12 @@ This will make possible to store your data and PDFs remotely so that:
 - if your computer crash or if you wipe by mistake all the data you have in your Zotero library, this data can still be found and downloaded from your online library
 - Online libraries make it possible to work with other users on shared bibliographies
 
+how to create an account? Nothing more easier, go to https://www.zotero.org/ click on login and then register, follow the instructions.
+If you have already installed Zotero on your computer, just click on the Sync tab and then login with your new credentials.
 
+![](images/sync.png)
+
+# How does Zotero look like on my laptop
 
 
 

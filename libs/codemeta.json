@@ -1,0 +1,31 @@
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "type": "SoftwareSourceCode",
+    "applicationCategory": "Education",
+    "author": [
+        {
+            "id": "https://orcid.org/0000-0001-9020-2148",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Université de Rennes"
+            },
+            "email": "damien.belveze@univ-rennes.fr",
+            "familyName": "Belvèze",
+            "givenName": "Damien"
+        }
+    ],
+    "codeRepository": "git+https://github.com/damienbelveze/CFCB_IA",
+    "dateCreated": "2024-11-29",
+    "description": "Support de cours réalisé pour une formation au CFCB de Poitiers le 3 décembre 2024",
+    "identifier": "https://liascript.github.io/course/?https://raw.githubusercontent.com/damienbelveze/CFCB_IA/main/deroule_cours.md#1",
+    "keywords": [
+        "artificial intelligence",
+        "information literacy"
+    ],
+    "license": "https://spdx.org/licenses/CC-BY-SA-4.0",
+    "name": "Aider les étudiants à prendre du recul par rapport à leurs usages des outils d'IA",
+    "operatingSystem": "Ubuntu",
+    "programmingLanguage": "LiaScript",
+    "version": "1.0.0"
+}

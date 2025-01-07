@@ -1,0 +1,30 @@
+<div id="ai_consommation"></div>
+	<script>
+	  (function() {
+		let h5pContainer = document.getElementById("zotero_dashboard"); // div tag ID
+		let h5pJsonPath = 'H5P/zotero_dashboard'; // H5P data directory path
+		
+		if (!document.getElementById('h5p-bundle-js')) {
+		  let script = document.createElement('script');
+		  script.id = 'h5p-bundle-js';
+		  script.src = 'libs/h5p/main.bundle.js';
+		  h5pContainer.parentNode.insertBefore(script, h5pContainer.nextSibling);
+		}
+
+		window.addEventListener("load", function() {
+		  const options = {
+			h5pJsonPath: h5pJsonPath,
+			frameJs: 'libs/h5p/frame.bundle.js',
+			frameCss: 'libs/h5p/styles/h5p.css',
+			frame: true,
+        	export: true,
+        	icon: true,
+        	downloadUrl: 'H5P/zotero_dashboard.h5p',
+        	fullScreen: true, 
+        	embed: true,
+        	embedCode:'<iframe width=":w" height=":h" src="https://damienbelveze.github.io/first_steps_zotero/zotero_dashboard.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>',
+		  	}
+		  new H5PStandalone.H5P(h5pContainer, options);
+		});
+	  }) ();
+	</script>
