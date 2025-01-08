@@ -144,7 +144,7 @@ If you have already installed Zotero on your computer, just click on the Sync ta
 
 # How does Zotero look like on my laptop
 
-
+<iframe width="900" height="391" src="https://damienbelveze.github.io/first_steps_zotero/zotero_dashboard.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>
 
 
 
