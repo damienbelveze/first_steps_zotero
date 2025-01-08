@@ -46,6 +46,9 @@ All of this now is 99% supported by this class of software named reference manag
 - [Mendeley](https://en.wikipedia.org/wiki/Mendeley) (owned by Elsevier, free-to-use) 
 - and of course Zotero which is free-to-use but above all *free* [¹]
 
+---
+[¹]: [free as in freedom not as "free coffee"](https://sagitter.fedorapeople.org/faif-2.0.pdf)
+
 # Why you should install Zotero rather than another reference manager?
 
 If you are member of a school or laboratory which has subscribed to a proprietary software (such as Refworks or Endnote), maybe you have access to one of them. Good for you! But how will you manage your references when you are no longer member of this team?
@@ -144,7 +147,7 @@ If you have already installed Zotero on your computer, just click on the Sync ta
 
 # How does Zotero look like on my laptop
 
-<iframe width="900" height="391" src="https://damienbelveze.github.io/first_steps_zotero/zotero_dashboard.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>
+<iframe width="900" height="349" src="https://damienbelveze.github.io/first_steps_zotero/zotero_dashboard.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>
 
 
 
@@ -156,5 +159,3 @@ If you have already installed Zotero on your computer, just click on the Sync ta
 
 
 
-___
-[¹]: [free as in freedom not as "free coffee"](https://sagitter.fedorapeople.org/faif-2.0.pdf)
