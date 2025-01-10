@@ -68,21 +68,67 @@ For Endnote and Refworks, we could not test it on our own, but we rely for that 
 
 Installation process is different according to your Operating System (OS)
 
-## Windows 
+
+For which Operating system you need information to install Zotero?
+
+- [ ] Windows
+- [ ] MacOS
+- [ ] VanillaOS (Chromebook)
+- [ ] GNU\Linux 
+- [ ] Android / iOS
+<script output="tasks">"@input"</script>
+
+<script style="width: 100%">
+try {
+  let task = @input(`tasks`)
+
+  if(task[0]) {
+    send.liascript(`>## Windows 
 
 go to the download page of the [zotero website](https://zotero.org)
-Download 1. the software 2. the plugin for your browser
+Download 1. the software 2. the plugin for your browser`
 
-## MacOs 
+    )
+  } else send.clear()
+} catch(e) { }
+</script>
+
+
+<script style="width: 100%">
+try {
+  let task = @input(`tasks`)
+
+  if(task[1]) {
+    send.liascript(`>## MacOs 
 
 go to the download page of the [zotero website](https://zotero.org)
-Zotero client embeds the plugin for Safari (you do not need to load a plugin for Safari). If you prefer to use another browser than Safari (let's say Chrome or Firefox), download and install the appropriate plugin.
+Zotero client embeds the plugin for Safari (you do not need to load a plugin for Safari). If you prefer to use another browser than Safari (let's say Chrome or Firefox), download and install the appropriate plugin.`
 
-## Chromebook
+    )
+  } else send.clear()
+} catch(e) { }
+</script>
 
-First you need to activate the Chromebook Linux sub-system (WSL) and then follow the instructions for GNU/Linux operating system 
+<script style="width: 100%">
+try {
+  let task = @input(`tasks`)
 
-## GNU/Linux 
+  if(task[2]) {
+    send.liascript(`>## Chromebook
+
+First you need to activate the Chromebook Linux sub-system (WSL) and then follow the instructions for GNU/Linux operating system` 
+
+    )
+  } else send.clear()
+} catch(e) { }
+</script>
+
+<script style="width: 100%">
+try {
+  let task = @input(`tasks`)
+
+  if(task[3]) {
+    send.liascript(`>## GNU/Linux 
 
 go to the download page of the [zotero website](https://zotero.org)
 download the archive (something like Zotero-6.0.35_linux-x86_64.tar.bz2)
@@ -91,45 +137,56 @@ you will need sudo rights for that.
 go to opt/
 *untar* this file : 
 
-```shell
-$ tar -xf Zotero-6.0.9_linux-x86_64.tar.bz2
-```
+
+>>$ tar -xf Zotero-6.0.9_linux-x86_64.tar.bz2
+
 
 rename the resulting file : 
 
-```shell
-$ mv Zotero-6.0.9_linux-x86_64 Zotero_linux
-```
+>>$ mv Zotero-6.0.9_linux-x86_64 Zotero_linux
+
 *cd* within Zotero_linux
 
-```shell
-$ cd Zotero_linux
-```
+
+>>$ cd Zotero_linux
+
 
 at this stage it's already possible to run Zotero (from this place Zotero_linux, with the following command : ./zotero), but obviously it's easier to use a desktop icon. 
 
 Run the launcher icon under Zotero_linux : 
 
-```shell
-$ ./set_launcher_icon
-```
+>>$ ./set_launcher_icon
+
 shortcuts are usually located in ~/.local/share/applications/
 
-So we will have to make a symlink (symbolic link) from this place to the place where Zotero Is 
+So we will have to make a symlink (symbolic link) from this place to the place where Zotero is :
 
-```shell
-$ ln -s /opt/Zotero_linux/zotero.desktop ~/.local/share/applications/zotero.desktop
-```
+
+>>$ ln -s /opt/Zotero_linux/zotero.desktop ~/.local/share/applications/zotero.desktop
+
 from now you should be able to start Zotero from an icon in your application menu. 
+don't forget to install the Zotero plugin in your favorite browser afterwards`
 
-don't forget to install the Zotero plugin in your favorite browser afterwards
+    )
+  } else send.clear()
+} catch(e) { }
+</script>
 
-## and on my smartphone
+<script style="width: 100%">
+try {
+  let task = @input(`tasks`)
+
+  if(task[4]) {
+    send.liascript(`>## and on my smartphone?
 
 A Zotero exists in [iOS](https://www.zotero.org/support/ios). 
 You may sync your Zotero library with a [beta app](https://play.google.com/store/apps/details?id=org.zotero.android&hl=en-US) designed for Android users as well. 
-References may be added manually, via a DOI/ISBN or by scanning a barcode (EAN for books), but in december 2024, it was still impossible to make the Android mobile version work with a browser ([due to a lack of interoperability of Android, according to Zotero developers](https://forums.zotero.org/discussion/comment/480563#Comment_480563))
+References may be added manually, via a DOI/ISBN or by scanning a barcode (EAN for books), but in december 2024, it was still impossible to make the Android mobile version work with a browser ([due to a lack of interoperability of Android, according to Zotero developers](https://forums.zotero.org/discussion/comment/480563#Comment_480563))`
 
+    )
+  } else send.clear()
+} catch(e) { }
+</script>
 
 # Why should I create an account to use Zotero
 
@@ -150,8 +207,24 @@ If you have already installed Zotero on your computer, just click on the Sync ta
 <iframe width="900" height="349" src="https://damienbelveze.github.io/first_steps_zotero/zotero_dashboard.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>
 
 
+# collecting bibliographic references
+
+Since iths 6th version, Zotero encapsulates its own PDF viewer making it possible to annotate, comment a PDF or capture and extract figures out of a it.
+You are going to collect a PDF document in your Zotero library
 
 
+>- save [this presentation](https://digitalrepository.unm.edu/cgi/viewcontent.cgi?article=1163&context=hslic-posters-presentations) in your Zotero library   
+>- check the reference (compare it with what appears on the titlepage of the document) : what should be amended or completed ?  
+>- open the PDF by double clicking on it : highlight some text, write a comment. both actions will have **annotations** as outputs  
+
+
+In this case, Zotero made a request to Google Scholar and found the link to the parent citation. But sometimes, it won't be possible to retrieve any citation from Scholar or elsewhere. You will need to add it manually!
+
+
+>- <a href="document.pdf" download>download this document</a>
+>- import it (drag and drop it) in your library
+>- open it in the PDF viewer
+>- create the reference manually (title, author, date)
 
 
 
