@@ -2,7 +2,7 @@ this guide is adapted to PhD students who discover the free reference manager Zo
 
 To display the lesson in your browser, click on the link below
 
-[![course badge](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://LiaScript.github.io/course/?[URL](https://raw.githubusercontent.com/damienbelveze/first_steps_zotero/main/first_steps_zotero.md#10))
+[![course badge](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/damienbelveze/first_steps_zotero/main/first_steps_zotero.md#1)
 
 Liascript is a markdown interpretor created by [André Dietrich](https://liascript.github.io/authors/andre-dietrich/)
 
