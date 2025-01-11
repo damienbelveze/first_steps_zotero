@@ -77,11 +77,10 @@ setTimeout(() => { window.bibliographyLoad("https://raw.githubusercontent.com/Li
                                                                                                                                                                                                                                                     
 ```
 
-# What is a reference manager
+# 1. What is a reference manager
 
-![](images/working.png)
+![Fomadoct on Callisto, Viêt Jannaud](images/working.png)
 
-<!--image made with the help of an AI tool for the website Formadoct on Callisto, Viêt Jeannaud -->
 
 before reference managers exist, writers had to manualy manage their references in their manuscript. It was a very tedious and painful task (and error-prone!)
 
@@ -97,7 +96,9 @@ All of this now is 99% supported by this class of software named reference manag
 ---
 [¹]: [free as in freedom not as "free coffee"](https://sagitter.fedorapeople.org/faif-2.0.pdf)
 
-# Why you should install Zotero rather than another reference manager?
+# 2. Why you should install Zotero rather than another reference manager?
+
+!?[Richard M. Stallman on what does free software mean](gif/stallman.mp4)
 
 If you are member of a school or laboratory which has subscribed to a proprietary software (such as Refworks or Endnote), maybe you have access to one of them. Good for you! But how will you manage your references when you are no longer member of this team?
 
@@ -112,7 +113,7 @@ For Endnote and Refworks, we could not test it on our own, but we rely for that 
 - [importing from Endnote](https://ask.lib.vt.edu/faq/38201)
 
 
-# How to install Zotero
+# 3. How to install Zotero
 
 Installation process is different according to your Operating System (OS)
 
@@ -236,7 +237,7 @@ References may be added manually, via a DOI/ISBN or by scanning a barcode (EAN f
 } catch(e) { }
 </script>
 
-# Why should I create an account to use Zotero
+# 4. Why should I create an account to use Zotero
 
 you don't have to to use Zotero localy, but we strongly advise you to create an account.
 This will make possible to store your data and PDFs remotely so that: 
@@ -250,12 +251,12 @@ If you have already installed Zotero on your computer, just click on the Sync ta
 
 ![](images/sync.png)
 
-# How does Zotero look like on my laptop
+# 5. How does Zotero look like on my laptop
 
 <iframe width="900" height="349" src="https://damienbelveze.github.io/first_steps_zotero/zotero_dashboard.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>
 
 
-# collecting bibliographic references
+# 6. collecting bibliographic references
 
 Since iths 6th version, Zotero encapsulates its own PDF viewer making it possible to annotate, comment a PDF or capture and extract figures out of a it.
 You are going to collect a PDF document in your Zotero library
@@ -275,7 +276,7 @@ In this case, Zotero made a request to Google Scholar and found the link to the 
 >- create the reference manually (title, author, date)
 
 
-# How to use tags
+# 7. How to use tags
 
 Don't wait till your library becomes too big to be easily manageable with only collections and subcollections. In order to improve the findability of your references in your library, you should consider adding tags to your references. 
 
@@ -298,7 +299,7 @@ You may assign a specific color to 9 of your tags : this feature is pretty usefu
 
 > add two tags to one of your references and assign a color to each of them
 
-# Let's talk about word processors
+# 8. Let's talk about word processors
 
 Zotero would not be very helpfull if it was not designed to help you insert and manage references within your word processor throughout the process of writing. 
 Now, most of word processors are interoperable with Zotero but not all. 
@@ -452,6 +453,174 @@ to achieve this : right panel > notes > add note from annotations
 
 We will now insert our note into our document *insert_refernces.odt". Use the "insert note" button to achieve this. The note should be inserted at the end of the document, before the bibliography
 
-> add this note and refresh the bibliography 
+> add this note refresh the bibliography, sync, and view you library online on https://zotero.org (don't forget to login!) 
 
 
+## How to find your style 
+
+![](images/style.png)
+
+### What is a bibliographic style
+
+In a a bibliography, a reference can be formatted in different ways. 
+
+This is how this reference is formatted in IEEE style (used by journals owned by the IEEE association and beyond by a lot of authors working in the field of informatic science and electronics):
+
+<!-- style="font-size: 40px;" -->
+        {{1}}
+<div class="csl-bib-body" style="line-height: 1.35; ">
+  <div class="csl-entry" style="clear: left; ">
+    <div class="csl-left-margin" style="float: left; padding-right: 0.5em;text-align: right; width: 1em;">[1]</div><div class="csl-right-inline" style="margin: 0 .4em 0 1.5em;">H. Allcott and M. Gentzkow, “Social Media and Fake News in the 2016 Election,” <i>Journal of Economic Perspectives</i>, vol. 31, no. 2, pp. 211–236, May 2017, doi: <a href="https://doi.org/10.1257/jep.31.2.211">10.1257/jep.31.2.211</a>.</div>
+  </div>
+  <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1257%2Fjep.31.2.211&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Social%20Media%20and%20Fake%20News%20in%20the%202016%20Election&amp;rft.jtitle=Journal%20of%20Economic%20Perspectives&amp;rft.stitle=Journal%20of%20Economic%20Perspectives&amp;rft.volume=31&amp;rft.issue=2&amp;rft.aufirst=Hunt&amp;rft.aulast=Allcott&amp;rft.au=Hunt%20Allcott&amp;rft.au=Matthew%20Gentzkow&amp;rft.date=2017-05-01&amp;rft.pages=211-236&amp;rft.spage=211&amp;rft.epage=236&amp;rft.issn=0895-3309&amp;rft.language=en"></span>
+</div>
+        {{2}}
+and this is how it will be formatted in a journal whose guidelines insist on using Chicago Manual of style (17th edition): 
+
+        {{3}}
+<!-- style="font-size: 40px;" -->
+<div class="csl-bib-body" style="line-height: 1.35; margin-left: 2em; text-indent:-2em;">
+  <div class="csl-entry">Allcott, Hunt, and Matthew Gentzkow. 2017. “Social Media and Fake News in the 2016 Election.” <i>Journal of Economic Perspectives</i> 31 (2): 211–36. <a href="https://doi.org/10.1257/jep.31.2.211">https://doi.org/10.1257/jep.31.2.211</a>.</div>
+  <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1257%2Fjep.31.2.211&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Social%20Media%20and%20Fake%20News%20in%20the%202016%20Election&amp;rft.jtitle=Journal%20of%20Economic%20Perspectives&amp;rft.stitle=Journal%20of%20Economic%20Perspectives&amp;rft.volume=31&amp;rft.issue=2&amp;rft.aufirst=Hunt&amp;rft.aulast=Allcott&amp;rft.au=Hunt%20Allcott&amp;rft.au=Matthew%20Gentzkow&amp;rft.date=2017-05-01&amp;rft.pages=211-236&amp;rft.spage=211&amp;rft.epage=236&amp;rft.issn=0895-3309&amp;rft.language=en"></span>
+</div>
+
+### Which style shoud you use
+
+It depends on the context of your work. 
+
+If you are writing a paper, you may choose the style that is mentioned in the author guidelines of the journal in which you would like to publish this paper. Whenever, you submit a paper to a journal, find out which style promotes this journal and format your bibliography accordingly (with Zotero, you just have to reset the preferences of your bibliography, this is quickly done if the style is already available in your styles list)
+
+if not, browse the [zotero style gallery](https://zotero.org/styles) in search of the bibliographic style that is needed and load it into Zotero.
+(Settings > Cite > Get additional styles) 
+
+![](images/find_styles.png)
+
+If you are working on your PhD dissertation, ask your supervisor; if they do not know which style to use, choose a standard one (Chicago, APA, MLA for Social and Human Sciences, IEEE, ACM for hard sciences, for example).
+
+More than 3500 styles exist, but if you cannot find the one you need, it's good to know that a bibliographic style is written in CSL (Citation Style Langugage) an XML citation descriptive format. Modifying a style is not trivial but this can be done with some technical skills, and the [citation style editor provided by Elsevier](https://editor.citationstyles.org/visualEditor/) may be of some help if you don't want to dive into the source code.
+
+
+For example, In the CSL source code part dedicated to the enumeration of bibliographic items, adding the following line : 
+
+```text
+<text variable="citation-number" suffix=". "/>
+```
+
+adds a . after the item number
+
+9. Adams, D. (2002). The Ultimate Hitchhiker's Guide to the Galaxy (1st ed.)  
+10. Asimov, I. (1951). Foundation. 
+
+
+
+
+# 9. Working with partners online
+
+With a free Zotero account, you get access to 300MB storage on Zotero servers. You may use a portion of this space to create group libraries and invite other people to make them grow. 
+You might be feel that this free space is limited if you use it to store PDFs or epubs along with references, but if you decide to keep only references, your group library might count several hundreds of items. 
+
+The next activity consists on creating a group library, populate it with one or two documents and invite your neighbour to add one of or two titles that he/she finds inspiring and would recommend (for academic work or for everyday life, as you wish)
+
+>- Go to the Zotero, website and login. 
+>- Go to groups
+>- create a new group (private membership) and give it a name 
+>- synchronize with your computer
+>- select this new group library in the groups subsection in your Zotero dashboard
+>- add two references of documents that you think worth reading for academic work or every day life 
+>- synchronize and go back to your group library online 
+>- invite your neighbour to collaborate to this library (you neeed their mail adress to do this)
+>- ask your neighbour to accept the invitation, synchronize and add two other references of their choice.
+
+# 10. What about using Zotero with Text Editors?
+
+if you have answered earlier "I use a text editor", this section was written for you. 
+
+A lot of plugins were developed by members of the Zotero community in order to adapt Zotero to their usual workflow (which workflow usually integrates text editor such as  $\LaTeX$ (Texmaker, Texstudio, Overleaf), org-mode or markdown editors (Vim, Emacs, Codium, VSCode, Atom, Obsidian, Zettlr...)). 
+
+
+
+## The BetterBibTex plugin
+
+These extensions all rely on a Zotero plugin called [betterbibtex (BBT)](https://retorque.re/zotero-better-bibtex/). This plugin is essential to manage bibtex citations from Zotero collections while writing plain text. 
+
+You will need to install this plugin in your Zotero extension manager to use it. 
+Basicaly, BBT will assign a unique bibtex key to every item in your library making possible to name and link it to a citation in your text. 
+
+This bibtex key by default will be made as a contraction of the first author name, the first title words and the publication year. 
+
+For instance, in my Zotero library, the following item 
+
+Munafò, Marcus R., Brian A. Nosek, Dorothy V. M. Bishop, Katherine S. Button, Christopher D. Chambers, Nathalie Percie du Sert, Uri Simonsohn, Eric-Jan Wagenmakers, Jennifer J. Ware, and John P. A. Ioannidis. 2017. “A Manifesto for Reproducible Science.” Nature Human Behaviour 1 (1): 1–9. https://doi.org/10.1038/s41562-016-0021.
+
+
+...has @anifestoReproducibleScience2017 as bibtex key
+
+and will be cited in a $\LaTeX$ environment like this: 
+
+```latex
+Munafo wrote in 2017 that there was a crisis of reproducibility in Science \cite{@anifestoReproducibleScience2017}
+```
+What you need is to extract your Zotero collection in a bibtex format and link it to the text file you are editing.
+In most of the cases it will be possible to keep you bibfile updated so that whenever you will add a reference in your collection, this will create a new record in your bibfile within your local workspace. 
+![BBT allows you to update your bibfile wherever it is on your computer to the zotero collection](images/export_bib.png)
+
+
+
+## What do you use as a text editor
+
+- [ ] Overleaf
+- [ ] Texmaker
+- [ ] Markdown editor 
+<script output="tasks">"@input"</script>
+
+<script style="width: 100%">
+try {
+  let task = @input(`tasks`)
+
+  if(task[0]) {
+    send.liascript(`>## Overleaf
+
+  Overleaf is a popular $\LaTeX$ distribution online. You may load the bib file of you collection in your project on Overleaf and then call references with bibtex keys.
+  
+  try it out with the following files : 
+      - <a href="zotero_overleaf.tex" download>tex file</a>
+      - <a href="biblio.bib" download>bib file</a>
+    load these files in a new project on Overleaf and compile them in order to get a PDF ; does it work?`
+  
+    )
+  } else send.clear()
+} catch(e) { }
+</script>
+
+<script style="width: 100%">
+try {
+  let task = @input(`tasks`)
+
+  if(task[1]) {
+    send.liascript(`>## TeXmaker
+
+
+
+`
+
+    )
+  } else send.clear()
+} catch(e) { }
+</script>
+
+
+<script style="width: 100%">
+try {
+  let task = @input(`tasks`)
+
+  if(task[2]) {
+    send.liascript(`>## Markdown editor
+
+
+
+`
+
+    )
+  } else send.clear()
+} catch(e) { }
+</script>
