@@ -122,7 +122,7 @@ For which Operating system you need information to install Zotero?
 
 - [ ] Windows
 - [ ] MacOS
-- [ ] VanillaOS (Chromebook)
+- [ ] Chromebook
 - [ ] GNU\Linux 
 - [ ] Android / iOS
 <script output="tasks">"@input"</script>
@@ -584,7 +584,7 @@ Which of these tools do you use to compose text with $\LaTeX$?
 - [ ] Texmaker
 - [ ] LaTeX through VSCode editor or VScodium
 - [ ] Obsidian 
-- [ ] Markdown editor 
+- [ ] from a CLI (Command Line Interface) 
 <script output="tasks">"@input"</script>
 
 <script style="width: 100%">
@@ -654,6 +654,84 @@ try {
   > - open the text file and click on the run (quick compile) icon ![](images/run_icon.png)  
 
   you should obtain a texte.pdf with a bibliography correctly parsed.`
+
+    )
+  } else send.clear()
+} catch(e) { }
+</script>
+
+<script style="width: 100%">
+try {
+  let task = @input(`tasks`)
+
+  if(task[3]) {
+    send.liascript(`>## Obsidian
+    Obsidian is a notetaking App which includes a markdown editor. 
+    Betterbibtex allows you to make a link between a Zotero Collection and your Obsidian vault (the two files are synchronized thanks to BBT's "keep updated" feature)
+    You can insert citations into your note with the help of two Obsidian plugins : [Citations](https://github.com/hans/obsidian-citation-plugin), by John Gauthier and [Pandoc Reference List](https://github.com/mgmeyers/obsidian-pandoc-reference-list), by Mathew Meyers.
+    Install these two plugins in Obsidian and activate them. 
+
+    ## Citations
+
+
+  - Choose biblatex as Citation database format  
+
+  - Insert the path to your bib file (absolute path, from Home) ; if the path is good, the numvber of items contained by the bibfile should be displayed.  
+
+  - In your Obsidian vault, create a folder (you may name it for instance 'references')    
+
+  - In Citation plugin settings, put the name of this folder ('references') in the Literature Note folder   
+
+  - You may leave the rest of these options as they are.   
+
+  - Define a shortcut to add add a citation in a note (for instance Ctrl+Maj+E)  
+
+  - Try to add  a reference from your bibfile in one of your note.  
+
+
+           ![](images/citations_plugin_settings.png) 
+
+ ## Pandoc Reference List
+    
+  To make this plugin work, you need to have [Pandoc](https://pandoc.org/) installed in your system. 
+
+  You need to know where on your operating system Pandoc was downloaded and installed (for example, /usr/bin/pandoc)
+  Pandoc will display a formatted reference in Obsidian's sidebar for each pandoc citekey (=bibtex key) in the active document.
+    
+  - Put the path to your bibfile  
+
+  - Set the Path to Pandoc on your system (see above)  
+
+  - Leave Zotero port as 23119  
+
+  - Choose a citation style in the list menu (you may also add the path to a CSL file as  bibliographic style file)  
+
+  - When you open the note to which you have added a not, you should see the corresponding citations in the editor's right sidebar  
+
+    
+        ![](images/note_with_reference.png)
+    
+    (page number is manualy added, this cannot be managed by Zotero)  `
+    
+    )
+  } else send.clear()
+} catch(e) { }
+</script>
+
+<script style="width: 100%">
+try {
+  let task = @input(`tasks`)
+
+  if(task[4]) {
+    send.liascript(`>## With Pandoc from Command Line Interface
+  
+  Install Pandoc on your system. 
+  We assume that you already have installed a $\LateX$ distribution (MikTex, TexLive, etc. )
+  Go to the [Zotero style gallery](https://www.zotero.org/styles)
+  select the style you need (let's say Nature)
+  Right-click on style's "source" file and save the file in your workspace, where you have your tex or markdown file and you bibliofile (let's say you wrote a file in markdown)
+  Pandoc has no 
+  `
 
     )
   } else send.clear()
