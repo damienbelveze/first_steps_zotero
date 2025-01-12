@@ -1,0 +1,113 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{claveyMastodonRefugePour2023}{article}{}
+      \name{author}{1}{}{%
+        {{hash=29b8c04738afeedc2ba3ca9941de08de}{%
+           family={Clavey},
+           familyi={C\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{29b8c04738afeedc2ba3ca9941de08de}
+      \strng{fullhash}{29b8c04738afeedc2ba3ca9941de08de}
+      \strng{bibnamehash}{29b8c04738afeedc2ba3ca9941de08de}
+      \strng{authorbibnamehash}{29b8c04738afeedc2ba3ca9941de08de}
+      \strng{authornamehash}{29b8c04738afeedc2ba3ca9941de08de}
+      \strng{authorfullhash}{29b8c04738afeedc2ba3ca9941de08de}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{14}
+      \field{entrysubtype}{magazine}
+      \field{journaltitle}{NexInpact}
+      \field{month}{3}
+      \field{title}{Mastodon Refuge Pour Communiquer Librement Sur La Recherche ?}
+      \field{urlday}{24}
+      \field{urlmonth}{8}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\dbelveze\Zotero\storage\TIRFEQX8\mastodon-refuge-pour-communiquer-librement-sur-recherche.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nextinpact.com/article/71227/mastodon-refuge-pour-communiquer-librement-sur-recherche
+      \endverb
+      \verb{url}
+      \verb https://www.nextinpact.com/article/71227/mastodon-refuge-pour-communiquer-librement-sur-recherche
+      \endverb
+    \endentry
+    \entry{strantzaliEvaluationFutureSustainable2017}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9a53c36fba1f4a60930da19e2dcab286}{%
+           family={Strantzali},
+           familyi={S\bibinitperiod},
+           given={Eleni},
+           giveni={E\bibinitperiod}}}%
+        {{hash=d7901640c4fadfc59563f6cfead93e3d}{%
+           family={Aravossis},
+           familyi={A\bibinitperiod},
+           given={Konstantinos},
+           giveni={K\bibinitperiod}}}%
+        {{hash=9bf07702dbfb89590ebae02e3f4ddd90}{%
+           family={Livanos},
+           familyi={L\bibinitperiod},
+           given={Georgios\bibnamedelima A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff62742f081b7493ee0dafc5ab227042}
+      \strng{fullhash}{ff62742f081b7493ee0dafc5ab227042}
+      \strng{bibnamehash}{ff62742f081b7493ee0dafc5ab227042}
+      \strng{authorbibnamehash}{ff62742f081b7493ee0dafc5ab227042}
+      \strng{authornamehash}{ff62742f081b7493ee0dafc5ab227042}
+      \strng{authorfullhash}{ff62742f081b7493ee0dafc5ab227042}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The decision-making process regarding the choice of alternative energy technologies is multidimensional, made up of a number of aspects at different levels, economic, technical, environmental and social. This paper uses a multicriteria decision making model, PROMETHEE II, to determine the best fuel mix for electricity generation in an isolated Greek island, Lesvos. Having analyzed the energy profile of the island, a set of 7 energy policy scenarios are determined and assessed against economic, technical, environmental and social criteria. The energy policy scenarios include the use of conventional fuels, wind energy and natural gas, in its liquid form, liquefied natural gas (LNG). Weighting of criteria is carried out according to three different perspectives, each one focusing on sustainability, economic and environmental/social benefits. Two sensitivity analyses are performed taking into account the fluctuations of the electricity demand and the fluctuations of the fuel prices.}
+      \field{issn}{1364-0321}
+      \field{journaltitle}{Renewable and Sustainable Energy Reviews}
+      \field{month}{9}
+      \field{shorttitle}{Evaluation of Future Sustainable Electricity Generation Alternatives}
+      \field{title}{Evaluation of Future Sustainable Electricity Generation Alternatives: {{The}} Case of a {{Greek}} Island}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{volume}{76}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{775\bibrangedash 787}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.rser.2017.03.085
+      \endverb
+      \verb{file}
+      \verb /home/dbelveze/Zotero/storage/IDXCFSYK/S136403211730415X.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

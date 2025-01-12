@@ -481,6 +481,7 @@ and this is how it will be formatted in a journal whose guidelines insist on usi
 <!-- style="font-size: 40px;" -->
 <div class="csl-bib-body" style="line-height: 1.35; margin-left: 2em; text-indent:-2em;">
   <div class="csl-entry">Allcott, Hunt, and Matthew Gentzkow. 2017. “Social Media and Fake News in the 2016 Election.” <i>Journal of Economic Perspectives</i> 31 (2): 211–36. <a href="https://doi.org/10.1257/jep.31.2.211">https://doi.org/10.1257/jep.31.2.211</a>.</div>
+  </div>
   <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1257%2Fjep.31.2.211&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Social%20Media%20and%20Fake%20News%20in%20the%202016%20Election&amp;rft.jtitle=Journal%20of%20Economic%20Perspectives&amp;rft.stitle=Journal%20of%20Economic%20Perspectives&amp;rft.volume=31&amp;rft.issue=2&amp;rft.aufirst=Hunt&amp;rft.aulast=Allcott&amp;rft.au=Hunt%20Allcott&amp;rft.au=Matthew%20Gentzkow&amp;rft.date=2017-05-01&amp;rft.pages=211-236&amp;rft.spage=211&amp;rft.epage=236&amp;rft.issn=0895-3309&amp;rft.language=en"></span>
 </div>
 
@@ -566,10 +567,23 @@ In most of the cases it will be possible to keep you bibfile updated so that whe
 
 
 
-## What do you use as a text editor
+## What do you use as a text editor
+
+for the next step, we assume that the following steps have already been made:
+
+- betterbibtex is active in Zotero, a bibtex was assigned to all your library's items
+- you have exported in BibLaTeX format one of your collection to your workspace by keeping it updated (possible for all the LaTeX editors listed below, except for Overleaf if you have only access to a free account)
+
+In order to make things easier to reproduce with the LaTeX IDE of your choice, you may just use the files provided in this repository (mentioned as <a href="texte.tex" download>texte.tex, for the text file</a>) and <a href="biblio.bib" download>biblio.bib for the bib(liography) file</a>.
+
+
+Which of these tools do you use to compose text with $\LaTeX$?
+
 
 - [ ] Overleaf
 - [ ] Texmaker
+- [ ] LaTeX through VSCode editor or VScodium
+- [ ] Obsidian 
 - [ ] Markdown editor 
 <script output="tasks">"@input"</script>
 
@@ -583,7 +597,7 @@ try {
   Overleaf is a popular $\LaTeX$ distribution online. You may load the bib file of you collection in your project on Overleaf and then call references with bibtex keys.
   
   try it out with the following files : 
-      - <a href="zotero_overleaf.tex" download>tex file</a>
+      - <a href="texte.tex" download>tex file</a>
       - <a href="biblio.bib" download>bib file</a>
     load these files in a new project on Overleaf and compile them in order to get a PDF ; does it work?`
   
@@ -599,9 +613,19 @@ try {
   if(task[1]) {
     send.liascript(`>## TeXmaker
 
+    We assume here that you already have installed on your computer a TeX distribution such as [MikTeX](https://miktex.org/download) or [TeXlive](https://tug.org/texlive/).
+    You may also have installed a $\LaTeX$ editor such as TeXstudio or TeXmaker (while it's not necessary, but our example relies on Texmaker). 
+    In order to parse references with your editor, you will be asked to install the **biber package**, which can be installed from Aptitude repo (if you use a GNU/Linux system : 
+    $ sudo apt install biber). Most recent versions of MiKteX already includes biber.
+    Once Biber is installed, you will have to configure your editor so that it can use it: 
 
-
-`
+    For Texmaker, in Options> Configure TeXmaker > commands, set Bib(la)tex = "/bin/biber" %) (check that biber is in the /bin folder)
+    Then in quick compile, select the following workflow : *LaTeX + BibLaTex + LaTeX(x2) + dvips + ps2pdf + see pdf*
+    ![](images/texmaker.png)
+    Try it out with the following files : 
+      - <a href="texte.tex" download>tex file</a>
+      - <a href="biblio.bib" download>bib file</a>
+      load these files in TeXmaker and quick-compile them (type F1) in order to get a PDF ; does it work?`    
 
     )
   } else send.clear()
@@ -614,11 +638,22 @@ try {
   let task = @input(`tasks`)
 
   if(task[2]) {
-    send.liascript(`>## Markdown editor
+    send.liascript(`>## $\LaTeX$ through VSCode or VSCodium
+  This works exactly the same for Microsoft VScode editor or its open source counterpart, VScodium. 
+  
+  > - Install LaTeX extension for VScode/codium (a plugin made by James Yu that was already installed more than 3 millions times)  
 
+  > - Open The palette with Ctrl+maj+P  
 
+  > - Open User_settings.json (type settings and then select the *Open User Settings.json* file to open it)  
 
-`
+  > - in this settings file, copy and paste the content of <a href="settings_latex.json" download>this json file</a>  
+
+  > - Load the <a href="texte.tex" download>texte file</a> and the <a href="biblio.bib>biblio file</a> into your workspace  
+
+  > - open the text file and click on the run (quick compile) icon ![](images/run_icon.png)  
+
+  you should obtain a texte.pdf with a bibliography correctly parsed.`
 
     )
   } else send.clear()

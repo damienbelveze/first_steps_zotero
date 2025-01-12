@@ -1,0 +1,52 @@
+"latex-workshop.latex.recipes": [
+    { 
+      /* add compile recipe for biber using xelatex */
+      "name": "xelatex -> biber -> xelatex*2",
+      "tools": [
+          "xelatex",
+          "biber",
+          "xelatex",
+          "xelatex"
+        ]
+     },      
+    ],
+  
+   "latex-workshop.latex.tools": [
+      
+    {
+        "name": "pdflatex",
+        "command": "pdflatex",
+        "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "%DOC%"
+        ]
+    },
+    {
+        "name": "bibtex",
+        "command": "bibtex",
+        "args": [
+            "%DOCFILE%"
+        ]
+    },
+    {
+      /*add biber entry */
+        "name": "biber",
+        "command": "biber",
+        "args": [
+             "%DOCFILE%"
+      ]
+    },
+    {
+        "name": "xelatex",
+        "command": "xelatex",
+        "args": [
+          "-synctex=1",
+          "-interaction=nonstopmode",
+          "-file-line-error",
+          "%DOC%"
+          ]
+     }
+  
+ ]
