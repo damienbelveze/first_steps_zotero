@@ -82,11 +82,11 @@ setTimeout(() => { window.bibliographyLoad("https://raw.githubusercontent.com/Li
 ![Fomadoct on Callisto, Viêt Jannaud](images/working.png)
 
 
-before reference managers exist, writers had to manualy manage their references in their manuscript. It was a very tedious and painful task (and error-prone!)
+Before reference managers existed, writers had to manually manage their references in their manuscript. It was a very tedious and painful task (and error-prone!)
 
-bibliographic management styling was something that used to be treated just before the milestones were reached. How many difficult nights were spent and lost in putting all references in the right place and in the right format. 
+Bibliographic styling was often left until just before major milestones, leading to countless difficult and sleepless nights spent ensuring every reference was in the correct place and format.
 
-All of this now is 99% supported by this class of software named reference managers. There are several of them. Among the most popular : 
+99% of this work is now supported by this class of software named reference managers. There are several of them. Among the most popular : 
 
 - [Refworks](https://en.wikipedia.org/wiki/RefWorks) (owned by Clarivates through Proquest)  
 - [Endnote](https://en.wikipedia.org/wiki/EndNote)(also Clarivate's property and neither free-to-use nor premium)  
@@ -100,13 +100,13 @@ All of this now is 99% supported by this class of software named reference manag
 
 !?[Richard M. Stallman on what does free software mean](gif/stallman.mp4)
 
-If you are member of a school or laboratory which has subscribed to a proprietary software (such as Refworks or Endnote), maybe you have access to one of them. Good for you! But how will you manage your references when you are no longer member of this team?
+If you are member of a school or laboratory which has subscribed to a proprietary software (such as Refworks or Endnote), you may have access to one of them. Good for you! But how will you manage your references when you are no longer member of this team?
 
 Don't worry, it is possible to export all your references from Refworks or Endnote and to import them into Zotero. 
 
-From Mendely you just have to export you whole library in a bib or RIS format and to import it in Zotero as it is.
+From Mendeley you just have to export your whole library in a bib or RIS format and to import it in Zotero as it is.
 
-For Endnote and Refworks, we could not test it on our own, but we rely for that on our colleagues from USA : 
+For Endnote and Refworks, we could not test it on our own, but we rely on what our colleagues from USA write about this: 
 
 - [importing from Refworks](https://libguides.uta.edu/zotero/importing-refworks-data-into-zotero)  
 
@@ -115,10 +115,10 @@ For Endnote and Refworks, we could not test it on our own, but we rely for that 
 
 # 3. How to install Zotero
 
-Installation process is different according to your Operating System (OS)
+Installation process is different depending on your Operating System (OS)
 
 
-For which Operating system you need information to install Zotero?
+For which Operating system do you need information to install Zotero?
 
 - [ ] Windows
 - [ ] MacOS
@@ -134,7 +134,7 @@ try {
   if(task[0]) {
     send.liascript(`>## Windows 
 
-go to the download page of the [zotero website](https://zotero.org)
+Go to the download page of the [zotero website](https://zotero.org)
 Download 1. the software 2. the plugin for your browser`
 
     )
@@ -150,8 +150,8 @@ try {
   if(task[1]) {
     send.liascript(`>## MacOs 
 
-go to the download page of the [zotero website](https://zotero.org)
-Zotero client embeds the plugin for Safari (you do not need to load a plugin for Safari). If you prefer to use another browser than Safari (let's say Chrome or Firefox), download and install the appropriate plugin.`
+Go to the download page of the [zotero website](https://zotero.org)
+Zotero client embeds the plugin for Safari (you do not need to load any plugin for Safari browser). If you prefer to use another browser (let's say Chrome or Firefox), download and install the dedicated plugin.`
 
     )
   } else send.clear()
@@ -165,7 +165,10 @@ try {
   if(task[2]) {
     send.liascript(`>## Chromebook
 
-First you need to activate the Chromebook Linux sub-system (WSL) and then follow the instructions for GNU/Linux operating system` 
+First you need to [activate the Chromebook Linux sub-system](https://www.zdnet.com/article/how-to-enable-linux-on-your-chromebook-and-why-you-should/) and then follow the instructions for GNU/Linux operating system
+
+Since the release of the 7th beta version, Zotero is compatible with ARM64 devices such as recent Chromebooks versions, which was not the case before.
+` 
 
     )
   } else send.clear()
@@ -179,18 +182,21 @@ try {
   if(task[3]) {
     send.liascript(`>## GNU/Linux 
 
-go to the download page of the [zotero website](https://zotero.org)
-download the archive (something like Zotero-6.0.35_linux-x86_64.tar.bz2)
-move this file to opt/
-you will need sudo rights for that. 
-go to opt/
-*untar* this file : 
+- Go to the download page of the [zotero website](https://zotero.org)  
+
+- Download the archive (something like Zotero-6.0.35_linux-x86_64.tar.bz2)  
+
+- Move this file to opt/ folder (you will need sudo rights for that)  
+
+- go to opt/   
+
+- *untar* this file :   
 
 
 >>$ tar -xf Zotero-6.0.9_linux-x86_64.tar.bz2
 
 
-rename the resulting file : 
+- Rename the resulting file : 
 
 >>$ mv Zotero-6.0.9_linux-x86_64 Zotero_linux
 
@@ -200,20 +206,20 @@ rename the resulting file :
 >>$ cd Zotero_linux
 
 
-at this stage it's already possible to run Zotero (from this place Zotero_linux, with the following command : ./zotero), but obviously it's easier to use a desktop icon. 
+- At this stage it's already possible to run Zotero (from this place Zotero_linux, with the following command : ./zotero), but obviously it's easier to use a desktop icon. 
 
-Run the launcher icon under Zotero_linux : 
+- Run the launcher icon under Zotero_linux : 
 
 >>$ ./set_launcher_icon
 
-shortcuts are usually located in ~/.local/share/applications/
+Shortcuts are usually located in ~/.local/share/applications/
 
 So we will have to make a symlink (symbolic link) from this place to the place where Zotero is :
 
 
 >>$ ln -s /opt/Zotero_linux/zotero.desktop ~/.local/share/applications/zotero.desktop
 
-from now you should be able to start Zotero from an icon in your application menu. 
+From now you should be able to start Zotero from an icon in your application menu. 
 don't forget to install the Zotero plugin in your favorite browser afterwards`
 
     )
@@ -229,6 +235,7 @@ try {
     send.liascript(`>## and on my smartphone?
 
 A Zotero exists in [iOS](https://www.zotero.org/support/ios). 
+
 You may sync your Zotero library with a [beta app](https://play.google.com/store/apps/details?id=org.zotero.android&hl=en-US) designed for Android users as well. 
 References may be added manually, via a DOI/ISBN or by scanning a barcode (EAN for books), but in december 2024, it was still impossible to make the Android mobile version work with a browser ([due to a lack of interoperability of Android, according to Zotero developers](https://forums.zotero.org/discussion/comment/480563#Comment_480563))`
 
@@ -242,14 +249,18 @@ References may be added manually, via a DOI/ISBN or by scanning a barcode (EAN f
 you don't have to to use Zotero localy, but we strongly advise you to create an account.
 This will make possible to store your data and PDFs remotely so that: 
 
-- if you use anoter computer, you will be able to retrieve from your library online all the references you need povided you have an internet connection  
+- if you use another computer, you will be able to retrieve from your library online all the references you need, povided you have an internet connection  
 - if your computer crash or if you wipe by mistake all the data you have in your Zotero library, this data can still be found and downloaded from your online library
 - Online libraries make it possible to work with other users on shared bibliographies
 
-how to create an account? Nothing more easier, go to https://www.zotero.org/ click on login and then register, follow the instructions.
+How to create an account? Nothing more easier, go to https://www.zotero.org/ click on *login* and then register, follow the instructions.
 If you have already installed Zotero on your computer, just click on the Sync tab and then login with your new credentials.
 
 ![](images/sync.png)
+
+Synchronisation is automatic but can be triggered by clicking on the green round arrow in the upper right corner of the dashboard. 
+
+![](images/sync_icon.png)
 
 # 5. How does Zotero look like on my laptop
 
@@ -258,13 +269,13 @@ If you have already installed Zotero on your computer, just click on the Sync ta
 
 # 6. collecting bibliographic references
 
-Since iths 6th version, Zotero encapsulates its own PDF viewer making it possible to annotate, comment a PDF or capture and extract figures out of a it.
-You are going to collect a PDF document in your Zotero library
+Since the release of the 6th version, Zotero encapsulates its own PDF viewer making it possible to annotate, comment a PDF or capture and extract figures out of a it.
+You are going to collect a PDF document in your Zotero library.
 
 
->- save [this presentation](https://digitalrepository.unm.edu/cgi/viewcontent.cgi?article=1163&context=hslic-posters-presentations) in your Zotero library   
->- check the reference (compare it with what appears on the titlepage of the document) : what should be amended or completed ?  
->- open the PDF by double clicking on it : highlight some text, write a comment. both actions will have **annotations** as outputs  
+>- Save [this presentation](https://digitalrepository.unm.edu/cgi/viewcontent.cgi?article=1163&context=hslic-posters-presentations) in your Zotero library   
+>- Check the reference (compare it with what appears on the titlepage of the document) : what should be amended or completed ?  
+>- Open the PDF by double clicking on it : highlight some text, write a comment. both actions will have **annotations** as outputs  
 
 
 In this case, Zotero made a request to Google Scholar and found the link to the parent citation. But sometimes, it won't be possible to retrieve any citation from Scholar or elsewhere. You will need to add it manually!
@@ -278,11 +289,11 @@ In this case, Zotero made a request to Google Scholar and found the link to the 
 
 # 7. How to use tags
 
-Don't wait till your library becomes too big to be easily manageable with only collections and subcollections. In order to improve the findability of your references in your library, you should consider adding tags to your references. 
+Don't wait until your library becomes too big to be easily manageable with only collections and subcollections. In order to improve the findability of your references in your library, you should consider adding tags to your references. 
 
-The default way of getting tags in your library is to let Zotero capture tags associated to the references in the source (database, catalog, etc.). If you prefer to deal only with tags you have chosen, you may inhibit this feature by unchecking a box in the main settings panel.
+The default way of getting tags in your library is to let Zotero capture tags associated to the references in the source (database, catalog, etc.). If you prefer to deal only with tags you have chosen, you may inhibit this feature by unchecking an option in the main settings panel.
 (go to edit > settings > General ; uncheck "automatically tag items with keywords and subject headiings)
-If you let many of these inherited tags populate your collections, you can get rid of them in just one move : 
+If you let many of these inherited tags populate your collections, you can get rid of them with just one move : 
 in the tag panel (bottom-left by clicking on the filter icon and checking the "delete automatic tags in this library" option) : 
 
 
@@ -297,12 +308,13 @@ If you want to tag your references, it can easily be down from the right sidebar
 for each reference, you may add as many tags as you want. 
 You may assign a specific color to 9 of your tags : this feature is pretty usefull if you need to conduct a literature review from references stored in several collections. 
 
-> add two tags to one of your references and assign a color to each of them
+> add two tags to one of your references and assign a color to each of them (and a number (1-9) as a shortkey to tag them).
 
 # 8. Let's talk about word processors
 
-Zotero would not be very helpfull if it was not designed to help you insert and manage references within your word processor throughout the process of writing. 
-Now, most of word processors are interoperable with Zotero but not all. 
+Zotero would not be very helpful if it weren’t designed to assist you in inserting and managing references within your word processor throughout the writing process.
+Today, most word processors are interoperable with Zotero, though not all.
+
 Which one do you usually use? 
 
 - [ ] Word from Microsoft Office
@@ -320,8 +332,11 @@ try {
 
   if(task[0]) {
     send.liascript(`>## Word
-    Zotero usually works well with the desktop wersion of Word (for instance Word 2021), but not with Office365. 
+
+    Zotero usually works well with the desktop wersion of MS Word (for instance Word 2021), but not with Office365. 
+
     As soon as you have installed Zotero, the Zotero plugin for Word might be added to this word processor. 
+
     It adds a tab named "Zotero" in the Word menu`
     )
   } else send.clear()
@@ -335,10 +350,18 @@ try {
 
   if(task[1]) {
     send.liascript(`>## LibreOffice
-    Zotero usually works well with LibreOffice. In some cases, the plugin for LibreOffice won't be automatically installed on Windows because Zotero needs to connect to a Java environment and can find any on the computer.
-    To install such an environment, close LibreOffice and Zotero, go to [Oracle website](https://jdk.java.net/) and download the last stable release available. Then reinstall the plugin for LibreOffice from Zotero ( Edit > Settings > Cite)
+
+    Zotero usually works well with LibreOffice. 
+    
+    In some cases, the plugin for LibreOffice won't be automatically installed on Windows because Zotero needs to connect to a Java environment and can find any on the computer.
+
+    To install such an environment, close LibreOffice and Zotero, 
+    
+    go to [Oracle website](https://jdk.java.net/) and download the last stable release available. Then reinstall the plugin for LibreOffice from Zotero ( Edit > Settings > Cite)
+    
     Reopen LibreOffice, check that LO is now connected to a Java Environment (JRE, JDK or an equivalent for GNU/Linux OS) : 
      ![](images/java.png). 
+    
     If Java is properly connected to LO, Zotero icons should be visible and active:
     ![](images/zotero_icons.png)
     `
@@ -353,6 +376,7 @@ try {
 
   if(task[2]) {
     send.liascript(`>## OpenOffice
+
     LibreOffice was born of Oracle's takeover of the OpenOffice software (and name). 
     OpenOffice is no longer updated, and is used by Oracle to create confusion with the free software suite born of OpenOffice and renamed LibreOffice in response to resistance from its original developers.
     OpenOffice may not work properly with Zotero, you'd better give up OpenOffice and switch to LibreOffice ([downloadable from here](https://www.libreoffice.org/download/download-libreoffice/))
@@ -368,6 +392,7 @@ try {
 
   if(task[3]) {
     send.liascript(`>## Google Doc
+
     Experienced researchers will tell you that's not a very good idea to write a scientific text on Google Doc. Who knows what Google will make out of text and data you give access them to by using their spreadsheets and word processor?
     But if you are engaged in a collaborative writing project, Google Doc can be usefull though. Zotero references can be inserted in a Google Doc by using Google's Zotero Google Doc Integration app. 
     ![](images/google_doc_zotero.png)
@@ -383,6 +408,7 @@ try {
 
   if(task[4]) {
     send.liascript(`>## Pages
+
     Pages has never been interoperable with Zotero and [is unlikely to work with this reference manager in the future](https://forums.zotero.org/discussion/102457/requesting-for-plugin-for-pages) due to choices made by the Software editor. You may connect Pages to Endnote (if you have an access to EN) but not to Zotero.
     These guys don't like Free Software. You 'd better quit Pages and opt for more transparent and interoperable products such as LibreOffice.
     `
@@ -397,7 +423,7 @@ try {
 
   if(task[5]) {
     send.liascript(`>## Don't tell me about word processors, I use a text editor
-    Not only we agree, but we value this : using free text editors makes science more reproductible. Besides word processors are distraction prone compared to text editors. See below our section about text editors
+    Not only we agree, but we value this : using free text editors makes science more reproductible. Besides word processors are distraction prone compared to text editors. See below [our section](#10-what-about-using-zotero-with-text-editors) about text editors
     `
     )
   } else send.clear()
@@ -412,7 +438,7 @@ try {
 
 The next activity will be divided in two parts : 
 
-1. save references in Zotero
+1. Save references in Zotero
 2. Insert them in a text 
 
 You will be prompted to choose a bibliographic style ; choose the first one listed in the popup.
@@ -421,9 +447,20 @@ You will be prompted to choose a bibliographic style ; choose the first one list
 
 > - Create a new collection "word_processor"
 > - Find the references listed in the document (1-6) online
-> - save them in the *word_processor" collection
+> - Save them in the *word_processor" collection
 > - insert them in the right place in the document
 > - print the bibliography at the end of the document
+
+## Retracted papers
+
+Save [this paper](10.1109/icbbe.2011.5780149) in your library
+What has happened?
+You probably see a red banner at the top of your Zotero dashboard:
+
+![](images/retracted.png)
+
+This banner informs you that the paper you have just saved was retracted and that you ought to be very cautious if you want to use it in your work. 
+In that manner, Zotero contributes to protect scientists who use it against the ["feet of clay" problem](https://www.nature.com/articles/d41586-024-02747-1) (when one of your papers are questioned because you inadvertendly cited a paper that was already retracted)
 
 ## How to insert a note 
 
@@ -431,11 +468,11 @@ Since Version 6, Zotero allows you to insert notes taken with Zotero editor as w
 
 In the word processor editor, select the reference "First Experiences with Reading Primary Literature by Undergraduate Life Science Students"
 
-> using the icons at the top of the PDF viewer, try to reproduce the get this result:
+> using the icons at the top of the PDF viewer (highlight, capture figure, comment...), try to reproduce this result:
 
 ![](images/PDF_notes.png)
 
-> convert all these "annotations" (left panel) in a single "note" 
+> convert all these "annotations" (from left panel) in a single "note" 
 
 to achieve this : right panel > notes > add note from annotations
 
@@ -447,7 +484,7 @@ to achieve this : right panel > notes > add note from annotations
 "Open archives repositories have been in existence in France since 2001; from 2006, a proactive policy led the main research agencies and universities to coordinate their actions towards a common archiving platform, HAL (Hyper Articles on Line), operated by CNRS (Centre National pour la Recherche Scientifique)"
 
 ```
-> In this new paragraph, within the note add [the source of this paragraph]((https://onlinelibrary.wiley.com/doi/abs/10.1087/095315107X239636) )
+> In this new paragraph, inside the note, add [the source of this paragraph](https://onlinelibrary.wiley.com/doi/abs/10.1087/095315107X239636)
 
 (Collect this reference and add it to the note)
 
@@ -464,7 +501,7 @@ We will now insert our note into our document *insert_refernces.odt". Use the "i
 
 In a a bibliography, a reference can be formatted in different ways. 
 
-This is how this reference is formatted in IEEE style (used by journals owned by the IEEE association and beyond by a lot of authors working in the field of informatic science and electronics):
+Here is how this reference was formatted in the IEEE style (used by journals owned by the IEEE association and beyond by a lot of authors working in the field of informatic science and electronics):
 
 <!-- style="font-size: 40px;" -->
         {{1}}
@@ -475,7 +512,7 @@ This is how this reference is formatted in IEEE style (used by journals owned by
   <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1257%2Fjep.31.2.211&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Social%20Media%20and%20Fake%20News%20in%20the%202016%20Election&amp;rft.jtitle=Journal%20of%20Economic%20Perspectives&amp;rft.stitle=Journal%20of%20Economic%20Perspectives&amp;rft.volume=31&amp;rft.issue=2&amp;rft.aufirst=Hunt&amp;rft.aulast=Allcott&amp;rft.au=Hunt%20Allcott&amp;rft.au=Matthew%20Gentzkow&amp;rft.date=2017-05-01&amp;rft.pages=211-236&amp;rft.spage=211&amp;rft.epage=236&amp;rft.issn=0895-3309&amp;rft.language=en"></span>
 </div>
         {{2}}
-and this is how it will be formatted in a journal whose guidelines insist on using Chicago Manual of style (17th edition): 
+and there how it will be formatted in a journal whose guidelines insist on using Chicago Manual of style (17th edition): 
 
         {{3}}
 <!-- style="font-size: 40px;" -->
@@ -489,9 +526,9 @@ and this is how it will be formatted in a journal whose guidelines insist on usi
 
 It depends on the context of your work. 
 
-If you are writing a paper, you may choose the style that is mentioned in the author guidelines of the journal in which you would like to publish this paper. Whenever, you submit a paper to a journal, find out which style promotes this journal and format your bibliography accordingly (with Zotero, you just have to reset the preferences of your bibliography, this is quickly done if the style is already available in your styles list)
+If you are writing a paper, you may choose the style that is mentioned in the Journal's author guidelines. Whenever, you intend to submit a paper to a journal, find out which style is required by this venue and format your bibliography accordingly. Thanks to Zotero, you just have to reset the preferences of your bibliography, this is quickly done if the style is already available in your styles list.
 
-if not, browse the [zotero style gallery](https://zotero.org/styles) in search of the bibliographic style that is needed and load it into Zotero.
+If not, browse the [zotero style gallery](https://zotero.org/styles) in search of the bibliographic style that is needed and load it into Zotero.
 (Settings > Cite > Get additional styles) 
 
 ![](images/find_styles.png)
@@ -499,7 +536,7 @@ if not, browse the [zotero style gallery](https://zotero.org/styles) in search o
 If you are working on your PhD dissertation, ask your supervisor; if they do not know which style to use, choose a standard one (Chicago, APA, MLA for Social and Human Sciences, IEEE, ACM for hard sciences, for example).
 
 More than 3500 styles exist, but if you cannot find the one you need, it's good to know that a bibliographic style is written in CSL (Citation Style Langugage) an XML citation descriptive format. Modifying a style is not trivial but this can be done with some technical skills, and the [citation style editor provided by Elsevier](https://editor.citationstyles.org/visualEditor/) may be of some help if you don't want to dive into the source code.
-
+In our repository, we have imported the <a href="nature.csl" download>Nature style CSL file</a>. Download it and open it with a text editor (your notepad for instance). You will have a quick view of how a CSL is formated.
 
 For example, In the CSL source code part dedicated to the enumeration of bibliographic items, adding the following line : 
 
@@ -517,20 +554,20 @@ adds a . after the item number
 
 # 9. Working with partners online
 
-With a free Zotero account, you get access to 300MB storage on Zotero servers. You may use a portion of this space to create group libraries and invite other people to make them grow. 
-You might be feel that this free space is limited if you use it to store PDFs or epubs along with references, but if you decide to keep only references, your group library might count several hundreds of items. 
+With a free Zotero account, you get access to 300mb storage on Zotero servers. You may use a portion of this space to create group libraries and invite other people to make them grow. 
+You will quickly be aware of the fact that this free space is limited, especially if you use it to store all you PDFs and documents along with references, but if you decide to keep only references, your group library can count up to several hundreds of items. 
 
 The next activity consists on creating a group library, populate it with one or two documents and invite your neighbour to add one of or two titles that he/she finds inspiring and would recommend (for academic work or for everyday life, as you wish)
 
 >- Go to the Zotero, website and login. 
 >- Go to groups
->- create a new group (private membership) and give it a name 
->- synchronize with your computer
->- select this new group library in the groups subsection in your Zotero dashboard
->- add two references of documents that you think worth reading for academic work or every day life 
->- synchronize and go back to your group library online 
->- invite your neighbour to collaborate to this library (you neeed their mail adress to do this)
->- ask your neighbour to accept the invitation, synchronize and add two other references of their choice.
+>- Create a new group (private membership) and give it a name 
+>- Synchronize with your computer
+>- Select this new group library in the groups subsection in your Zotero dashboard
+>- Add two references of documents that you think worth reading for academic work or every day life (for us it would be [The Art of Being Right](https://en.wikipedia.org/wiki/The_Art_of_Being_Right) by Schopenhauer)
+>- Synchronize and go back to your group library online 
+>- Invite your neighbour to collaborate to this library (you neeed their mail adress to do this)
+>- Ask your neighbour to accept the invitation, synchronize and add two other references of their choice.
 
 # 10. What about using Zotero with Text Editors?
 
@@ -542,14 +579,17 @@ A lot of plugins were developed by members of the Zotero community in order to a
 
 ## The BetterBibTex plugin
 
-These extensions all rely on a Zotero plugin called [betterbibtex (BBT)](https://retorque.re/zotero-better-bibtex/). This plugin is essential to manage bibtex citations from Zotero collections while writing plain text. 
+These extensions to text editors (VScode, Notion, Obsidian, etc), all rely on a single plugin that has to be installed on Zotero and is called [betterbibtex (BBT)](https://retorque.re/zotero-better-bibtex/). This plugin is essential to manage bibtex citations from Zotero collections while writing plain text. 
 
-You will need to install this plugin in your Zotero extension manager to use it. 
+Thus, if you want to go further you first need to [install this plugin](https://github.com/retorquere/zotero-better-bibtex/releases/tag/v7.0.5) in your Zotero extension manager to use it. 
+
+To install a plugin in Zotero, download its .xpi file to your computer. Then, in Zotero, click “Tools > Plugins” and drag the .xpi onto the Plugins window. 
+
 Basicaly, BBT will assign a unique bibtex key to every item in your library making possible to name and link it to a citation in your text. 
 
 This bibtex key by default will be made as a contraction of the first author name, the first title words and the publication year. 
 
-For instance, in my Zotero library, the following item 
+For instance, in my Zotero library, the following item :
 
 Munafò, Marcus R., Brian A. Nosek, Dorothy V. M. Bishop, Katherine S. Button, Christopher D. Chambers, Nathalie Percie du Sert, Uri Simonsohn, Eric-Jan Wagenmakers, Jennifer J. Ware, and John P. A. Ioannidis. 2017. “A Manifesto for Reproducible Science.” Nature Human Behaviour 1 (1): 1–9. https://doi.org/10.1038/s41562-016-0021.
 
@@ -711,7 +751,7 @@ try {
     
         ![](images/note_with_reference.png)
     
-    (page number is manualy added, this cannot be managed by Zotero)  `
+    (page number is manually added, this cannot be managed by Zotero)  `
     
     )
   } else send.clear()
@@ -725,15 +765,54 @@ try {
   if(task[4]) {
     send.liascript(`>## With Pandoc from Command Line Interface
   
-  Install Pandoc on your system. 
-  We assume that you already have installed a $\LateX$ distribution (MikTex, TexLive, etc. )
-  Go to the [Zotero style gallery](https://www.zotero.org/styles)
-  select the style you need (let's say Nature)
-  Right-click on style's "source" file and save the file in your workspace, where you have your tex or markdown file and you bibliofile (let's say you wrote a file in markdown)
-  Pandoc has no 
+   
+  Pandoc is a universal converter that can convert a multitude of formats into a same amount of other formats. You will need Pandoc and a $\LaTeX$ ditribution to convert docx, odt, epub, markdown (etc) files into PDF.
+
+  
+  > - Install [Pandoc](https://pandoc.org/) on your system. We assume that you already have installed a $\LateX$ distribution (MikTex, TexLive, etc. )
+  
+  > - Go to the [Zotero style gallery](https://www.zotero.org/styles)
+  
+  > - select the style you need (let's say Nature)
+  
+  > - Right-click on style's "source" file and save the file in your workspace, where you have your tex or markdown file and you bibliofile (let's   say you wrote a file in markdown)
+  
+  Pandoc has no graphical user interface (GUI) but is used with command lines sent via a terminal. 
+  
+  ## download the files at the root of the workspace 
+
+  - Open a terminal (On Windows, in the start menu, type 'cmd' and open the terminal or open powershell ; on a GNU/Linux system, open a terminal with Ctrl+Alt+T and 'cd' to the workspace)  
+  
+  - In the workspace, download the <a href="texte.md" download>markdown text</a> the <a href="biblio.bib" download>biblio file and the <a href="nature.csl" download>CSL file</a>.  
+
+  - Then write this command line : 
+
+  > $ pandoc texte.md --bibliography=biblio.bib --csl=nature.csl --citeproc --pdf-engine=xelatex -o texte2.pdf
+
+  ### Informations about the command : 
+
+  |pandoc | call to the programme that converts the md file to pdf format |  
+  |bibliography | path to the bibliography file |  
+  |csl | path to the citation format file | 
+  | citeproc | package used to parse bibliographic references |
+  |xelatex | $\LaTeX$ package to convert a file into a PDF using a $\LaTeX$ suite |
+  | o | output |
+
+  You should obtain a texte2.pdf with a bibliography properly formated and printed.
+
   `
 
     )
   } else send.clear()
 } catch(e) { }
 </script>
+
+# Conclusion
+
+So many things can be achieved with Zotero!
+
+In our 'advanced zotero training session', you will learn to: 
+
+- use Zotero as a feed reader 
+- modify a bibliographic style 
+- save PDFs and references in a personal cloud where you have more space than on the Zotero servers
