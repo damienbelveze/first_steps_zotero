@@ -79,7 +79,7 @@ setTimeout(() => { window.bibliographyLoad("https://raw.githubusercontent.com/Li
 
 # 1. What is a reference manager
 
-![Fomadoct on Callisto, Viêt Jannaud](images/working.png)<!--a man is writing on what looks like a table with a stiletto. The youn man wears a beard and looks like a hipster, the table seems to be an electronic device  -->
+![Fomadoct on Callisto, Viêt Jannaud](images/working.png)<!--title="a man is writing on what looks like a table with a stiletto. The youn man wears a beard and looks like a hipster, the table seems to be an electronic device" -->
 
 
 Before reference managers existed, writers had to manually manage their references in their manuscript. It was a very tedious and painful task (and error-prone!)
