@@ -79,7 +79,7 @@ setTimeout(() => { window.bibliographyLoad("https://raw.githubusercontent.com/Li
 
 # 1. What is a reference manager
 
-![Fomadoct on Callisto, Viêt Jannaud](images/working.png)<!--title="a man is writing on what looks like a table with a stiletto. The youn man wears a beard and looks like a hipster, the table seems to be an electronic device" -->
+![Fomadoct on Callisto, Viêt Jannaud](images/working.png)<!--title="a man engraves a text with a stiletto in a marble table. The image is decorative and does not add information to the text. It was forged by an AI generation tool. " -->
 
 
 Before reference managers existed, writers had to manually manage their references in their manuscript. It was a very tedious and painful task (and error-prone!)
@@ -98,7 +98,7 @@ Bibliographic styling was often left until just before major milestones, leading
 
 # 2. Why you should install Zotero rather than another reference manager?
 
-!?[Richard M. Stallman on what does free software mean](gif/stallman.mp4)
+!?[Richard M. Stallman on what does free software mean](gif/stallman.mp4)<!-- title="in this video, Richard Maynard Stallman who invented the GNU/Licences and the concept of free software distingues between a software that is free to use (no money needs to be paid) and a free software that lets their users the 4 freedoms associated with open source movement"-->
 
 If you are member of a school or laboratory which has subscribed to a proprietary software (such as Refworks or Endnote), you may have access to one of them. Good for you! But how will you manage your references when you are no longer member of this team?
 
@@ -256,11 +256,11 @@ This will make possible to store your data and PDFs remotely so that:
 How to create an account? Nothing more easier, go to https://www.zotero.org/ click on *login* and then register, follow the instructions.
 If you have already installed Zotero on your computer, just click on the Sync tab and then login with your new credentials.
 
-![](images/sync.png)
+![](images/sync.png)<!-- title="synchronisation submenu (settings > synchronization)"-->
 
 Synchronisation is automatic but can be triggered by clicking on the green round arrow in the upper right corner of the dashboard. 
 
-![](images/sync_icon.png)
+![](images/sync_icon.png)<!-- title="image of the synchronization button (green circle arrow) that can be used to trigger synchronization"-->
 
 # 5. How does Zotero look like on my laptop
 
@@ -297,13 +297,13 @@ If you let many of these inherited tags populate your collections, you can get r
 in the tag panel (bottom-left by clicking on the filter icon and checking the "delete automatic tags in this library" option) : 
 
 
-![](images/remove_inherited_tags.png)
+![](images/remove_inherited_tags.png)<!-- title="view of the tags pane ; in this pane, inherited tags are marked with an asterisk" -->
 
 this can be achieved for a specific collection
 
 If you want to tag your references, it can easily be down from the right sidebar:
 
-!?[](gif/add_tags.mp4)
+!?[](gif/add_tags.mp4)<!-- title="this short video explains how it is possible to assign tags to library items ; for that purpose, user may either create a new tag from the the right side menu attached to the document info pane, or if the tag already exists in the tag pane (bottom left) they can drag and drop the reference to the relevant tag" -->
 
 for each reference, you may add as many tags as you want. 
 You may assign a specific color to 9 of your tags : this feature is pretty usefull if you need to conduct a literature review from references stored in several collections. 
@@ -360,10 +360,10 @@ try {
     go to [Oracle website](https://jdk.java.net/) and download the last stable release available. Then reinstall the plugin for LibreOffice from Zotero ( Edit > Settings > Cite)
     
     Reopen LibreOffice, check that LO is now connected to a Java Environment (JRE, JDK or an equivalent for GNU/Linux OS) : 
-     ![](images/java.png). 
+     ![](images/java.png)<!-- title="to check that LO is connected to the Java environment used on your laptop, open LibreOffice menu : Tools > Options > advanced ; the radio button before the name of the java button should be checked." --> 
     
     If Java is properly connected to LO, Zotero icons should be visible and active:
-    ![](images/zotero_icons.png)
+    ![](images/zotero_icons.png)<!-- title="view of the zotero icons that appear on the left part of LibreOffice writer menu after Zotero is installed if anything worked properly during the installation process" -->
     `
     )
   } else send.clear()
@@ -470,13 +470,13 @@ In the word processor editor, select the reference "First Experiences with Readi
 
 > using the icons at the top of the PDF viewer (highlight, capture figure, comment...), try to reproduce this result:
 
-![](images/PDF_notes.png)
+![](images/PDF_notes.png)<!--title="this image contains a document opened in Zotero PDF viewer, four lines of this PDF document were coloured in blue, a sticky note was added somewhere in the text, a figure was selected and captured. All this parts of the PDF appear in the left panel as annotations. From these annotations, Zotero makes it possible to edit a single note in the right panel"-->
 
 > convert all these "annotations" (from left panel) in a single "note" 
 
 to achieve this : right panel > notes > add note from annotations
 
-![](images/add_note.png)
+![](images/add_note.png)<!-- title="view of the single note created from the annotations ; this note contains the three annotations which are still visible in the annotations panel : blue highlighted text, comment added as a note in the PDF and figure that was captured" -->
 
 > edit this note in order to add the following paragraph:
 
@@ -495,7 +495,7 @@ We will now insert our note into our document *insert_refernces.odt". Use the "i
 
 ## How to find your style 
 
-![](images/style.png)
+![](images/style.png)<!-- in this drawing, five female top models pause with different garments. each top model is legended after the name of one of the most used bibliographical styles : Vancouver, Nature, IEEE, PLOSOne, the last one is a style that does not really exists but would have very exotic features such as the insertion of adorned medieval initials" -->
 
 ### What is a bibliographic style
 
@@ -603,7 +603,7 @@ Munafo wrote in 2017 that there was a crisis of reproducibility in Science \cite
 ```
 What you need is to extract your Zotero collection in a bibtex format and link it to the text file you are editing.
 In most of the cases it will be possible to keep you bibfile updated so that whenever you will add a reference in your collection, this will create a new record in your bibfile within your local workspace. 
-![BBT allows you to update your bibfile wherever it is on your computer to the zotero collection](images/export_bib.png)
+![BBT allows you to update your bibfile wherever it is on your computer to the zotero collection](images/export_bib.png)<!-- title="export menu which opens when user right-clicks on a collection. biblatex format is selected, and the keep-updated option is checked" -->
 
 
 
@@ -661,7 +661,7 @@ try {
 
     For Texmaker, in Options> Configure TeXmaker > commands, set Bib(la)tex = "/bin/biber" %) (check that biber is in the /bin folder)
     Then in quick compile, select the following workflow : *LaTeX + BibLaTex + LaTeX(x2) + dvips + ps2pdf + see pdf*
-    ![](images/texmaker.png)
+    ![](images/texmaker.png)<!-- title="compilation workflow menu in TeXmaker user interface. Biber in included in the workflow" -->
     Try it out with the following files : 
       - <a href="texte.tex" download>tex file</a>
       - <a href="biblio.bib" download>bib file</a>
@@ -691,7 +691,7 @@ try {
 
   > - Load the <a href="texte.tex" download>texte file</a> and the <a href="biblio.bib>biblio file</a> into your workspace  
 
-  > - open the text file and click on the run (quick compile) icon ![](images/run_icon.png)  
+  > - open the text file and click on the run (quick compile) icon ![](images/run_icon.png)<!--title="build LaTeX project icon in VScode viewer (upper-right corner)" -->  
 
   you should obtain a texte.pdf with a bibliography correctly parsed.`
 
@@ -729,7 +729,7 @@ try {
   - Try to add  a reference from your bibfile in one of your note.  
 
 
-           ![](images/citations_plugin_settings.png) 
+           ![](images/citations_plugin_settings.png)<!--title="Citations plugin settings within Obsidian dashboard" --> 
 
  ## Pandoc Reference List
     
@@ -749,7 +749,7 @@ try {
   - When you open the note to which you have added a not, you should see the corresponding citations in the editor's right sidebar  
 
     
-        ![](images/note_with_reference.png)
+        ![](images/note_with_reference.png)<!-- title="view of an Obsidian note with inline citations well formatted (with an author-date style). The list of references cited in the note is displayed in a right side panel created by the Pandoc Reference plugin" -->
     
     (page number is manually added, this cannot be managed by Zotero)  `
     
